@@ -14,12 +14,3 @@ women_scientists = {
 }
 
 famous_births(women_scientists)
-
-# famous_births(women_scientists)
-
-# for x in women_scientists:
-#     name = women_scientists[x]["name"]
-#     years = women_scientists[x]["date_of_birth"]
-#     print(f"{name} is a great scientist born in {years}")
-
-# sorted_scientists = sorted(women_scientists.values(), key=lambda x : int(x["date_of_birth"]))
