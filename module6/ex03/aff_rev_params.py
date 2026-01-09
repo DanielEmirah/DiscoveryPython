@@ -1,0 +1,9 @@
+#!/usr/bin/env python
+
+import sys
+
+if len(sys.argv) <= 2 :
+    print(None)
+else :
+    for i in range(len(sys.argv)):
+        print(sys.argv[-i])
