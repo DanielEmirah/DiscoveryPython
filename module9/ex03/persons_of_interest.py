@@ -1,7 +1,9 @@
 #!/usr/bin/env python
 
 def famous_births(d):
-    pass
+    sorted_d = sorted(d.values(), key=lambda x : int(x["date_of_birth"]))
+    for s in sorted_d:
+        print(f"{s["name"]} is a great scientist born in {s["date_of_birth"]}")
 
 
 women_scientists = {
@@ -11,9 +13,13 @@ women_scientists = {
     "grace": { "name": "Grace Hopper", "date_of_birth": "1906" }
 }
 
+famous_births(women_scientists)
+
 # famous_births(women_scientists)
 
-for x in women_scientists:
-    name = women_scientists[x]["name"]
-    years = women_scientists[x]["date_of_birth"]
-    print(f"{name} is a great scientist born in {years}")
+# for x in women_scientists:
+#     name = women_scientists[x]["name"]
+#     years = women_scientists[x]["date_of_birth"]
+#     print(f"{name} is a great scientist born in {years}")
+
+# sorted_scientists = sorted(women_scientists.values(), key=lambda x : int(x["date_of_birth"]))
